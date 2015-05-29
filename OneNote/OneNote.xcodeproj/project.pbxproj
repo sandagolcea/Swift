@@ -1,0 +1,428 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F243E3211B15056C00703DFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F243E3201B15056C00703DFC /* AppDelegate.swift */; };
+		F243E3231B15056C00703DFC /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F243E3221B15056C00703DFC /* MasterViewController.swift */; };
+		F243E3251B15056C00703DFC /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F243E3241B15056C00703DFC /* DetailViewController.swift */; };
+		F243E3281B15056C00703DFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F243E3261B15056C00703DFC /* Main.storyboard */; };
+		F243E32A1B15056C00703DFC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F243E3291B15056C00703DFC /* Images.xcassets */; };
+		F243E32D1B15056C00703DFC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F243E32B1B15056C00703DFC /* LaunchScreen.xib */; };
+		F243E3391B15056D00703DFC /* OneNoteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F243E3381B15056D00703DFC /* OneNoteTests.swift */; };
+		F243E3431B152A1D00703DFC /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = F243E3421B152A1D00703DFC /* Note.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F243E3331B15056D00703DFC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F243E3131B15056C00703DFC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F243E31A1B15056C00703DFC;
+			remoteInfo = OneNote;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F243E31B1B15056C00703DFC /* OneNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OneNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F243E31F1B15056C00703DFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F243E3201B15056C00703DFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F243E3221B15056C00703DFC /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		F243E3241B15056C00703DFC /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		F243E3271B15056C00703DFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F243E3291B15056C00703DFC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F243E32C1B15056C00703DFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		F243E3321B15056D00703DFC /* OneNoteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OneNoteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F243E3371B15056D00703DFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F243E3381B15056D00703DFC /* OneNoteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneNoteTests.swift; sourceTree = "<group>"; };
+		F243E3421B152A1D00703DFC /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F243E3181B15056C00703DFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F243E32F1B15056D00703DFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F243E3121B15056C00703DFC = {
+			isa = PBXGroup;
+			children = (
+				F243E31D1B15056C00703DFC /* OneNote */,
+				F243E3351B15056D00703DFC /* OneNoteTests */,
+				F243E31C1B15056C00703DFC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F243E31C1B15056C00703DFC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F243E31B1B15056C00703DFC /* OneNote.app */,
+				F243E3321B15056D00703DFC /* OneNoteTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F243E31D1B15056C00703DFC /* OneNote */ = {
+			isa = PBXGroup;
+			children = (
+				F243E3201B15056C00703DFC /* AppDelegate.swift */,
+				F243E3221B15056C00703DFC /* MasterViewController.swift */,
+				F243E3241B15056C00703DFC /* DetailViewController.swift */,
+				F243E3261B15056C00703DFC /* Main.storyboard */,
+				F243E3421B152A1D00703DFC /* Note.swift */,
+				F243E3291B15056C00703DFC /* Images.xcassets */,
+				F243E32B1B15056C00703DFC /* LaunchScreen.xib */,
+				F243E31E1B15056C00703DFC /* Supporting Files */,
+			);
+			path = OneNote;
+			sourceTree = "<group>";
+		};
+		F243E31E1B15056C00703DFC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F243E31F1B15056C00703DFC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F243E3351B15056D00703DFC /* OneNoteTests */ = {
+			isa = PBXGroup;
+			children = (
+				F243E3381B15056D00703DFC /* OneNoteTests.swift */,
+				F243E3361B15056D00703DFC /* Supporting Files */,
+			);
+			path = OneNoteTests;
+			sourceTree = "<group>";
+		};
+		F243E3361B15056D00703DFC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F243E3371B15056D00703DFC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F243E31A1B15056C00703DFC /* OneNote */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F243E33C1B15056D00703DFC /* Build configuration list for PBXNativeTarget "OneNote" */;
+			buildPhases = (
+				F243E3171B15056C00703DFC /* Sources */,
+				F243E3181B15056C00703DFC /* Frameworks */,
+				F243E3191B15056C00703DFC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OneNote;
+			productName = OneNote;
+			productReference = F243E31B1B15056C00703DFC /* OneNote.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F243E3311B15056D00703DFC /* OneNoteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F243E33F1B15056D00703DFC /* Build configuration list for PBXNativeTarget "OneNoteTests" */;
+			buildPhases = (
+				F243E32E1B15056D00703DFC /* Sources */,
+				F243E32F1B15056D00703DFC /* Frameworks */,
+				F243E3301B15056D00703DFC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F243E3341B15056D00703DFC /* PBXTargetDependency */,
+			);
+			name = OneNoteTests;
+			productName = OneNoteTests;
+			productReference = F243E3321B15056D00703DFC /* OneNoteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F243E3131B15056C00703DFC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = "Sanda Golcea";
+				TargetAttributes = {
+					F243E31A1B15056C00703DFC = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					F243E3311B15056D00703DFC = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = F243E31A1B15056C00703DFC;
+					};
+				};
+			};
+			buildConfigurationList = F243E3161B15056C00703DFC /* Build configuration list for PBXProject "OneNote" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F243E3121B15056C00703DFC;
+			productRefGroup = F243E31C1B15056C00703DFC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F243E31A1B15056C00703DFC /* OneNote */,
+				F243E3311B15056D00703DFC /* OneNoteTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F243E3191B15056C00703DFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F243E3281B15056C00703DFC /* Main.storyboard in Resources */,
+				F243E32D1B15056C00703DFC /* LaunchScreen.xib in Resources */,
+				F243E32A1B15056C00703DFC /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F243E3301B15056D00703DFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F243E3171B15056C00703DFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F243E3251B15056C00703DFC /* DetailViewController.swift in Sources */,
+				F243E3231B15056C00703DFC /* MasterViewController.swift in Sources */,
+				F243E3211B15056C00703DFC /* AppDelegate.swift in Sources */,
+				F243E3431B152A1D00703DFC /* Note.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F243E32E1B15056D00703DFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F243E3391B15056D00703DFC /* OneNoteTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F243E3341B15056D00703DFC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F243E31A1B15056C00703DFC /* OneNote */;
+			targetProxy = F243E3331B15056D00703DFC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F243E3261B15056C00703DFC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F243E3271B15056C00703DFC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F243E32B1B15056C00703DFC /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F243E32C1B15056C00703DFC /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F243E33A1B15056D00703DFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F243E33B1B15056D00703DFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F243E33D1B15056D00703DFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = OneNote/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F243E33E1B15056D00703DFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = OneNote/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F243E3401B15056D00703DFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = OneNoteTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OneNote.app/OneNote";
+			};
+			name = Debug;
+		};
+		F243E3411B15056D00703DFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = OneNoteTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OneNote.app/OneNote";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F243E3161B15056C00703DFC /* Build configuration list for PBXProject "OneNote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F243E33A1B15056D00703DFC /* Debug */,
+				F243E33B1B15056D00703DFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F243E33C1B15056D00703DFC /* Build configuration list for PBXNativeTarget "OneNote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F243E33D1B15056D00703DFC /* Debug */,
+				F243E33E1B15056D00703DFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F243E33F1B15056D00703DFC /* Build configuration list for PBXNativeTarget "OneNoteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F243E3401B15056D00703DFC /* Debug */,
+				F243E3411B15056D00703DFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F243E3131B15056C00703DFC /* Project object */;
+}
