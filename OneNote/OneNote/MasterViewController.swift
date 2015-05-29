@@ -10,7 +10,7 @@ import UIKit
 
 class MasterViewController: UITableViewController {
 
-    var objects = [AnyObject]()
+//    var objects = [AnyObject]()
 
 
     override func awakeFromNib() {
@@ -21,13 +21,6 @@ class MasterViewController: UITableViewController {
         super.viewDidLoad()
 
         Note.loadNotes()
-        println("all notes: \(notesArray)")
-        
-        var myNote : Note = Note()
-
-        notesArray.append(myNote)
-        Note.saveNotes()
-
         noteTable = self.tableView
 
         // Do any additional setup after loading the view, typically from a nib.
@@ -43,9 +36,10 @@ class MasterViewController: UITableViewController {
     }
 
     func insertNewObject(sender: AnyObject) {
-        objects.insert(NSDate(), atIndex: 0)
+        notesArray.insert(Note(), atIndex: 0)
         let indexPath = NSIndexPath(forRow: 0, inSection: 0)
         self.tableView.insertRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
+        self.performSegueWithIdentifier("showDetail", sender: self)
     }
 
     // MARK: - Segues
@@ -53,8 +47,10 @@ class MasterViewController: UITableViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "showDetail" {
             if let indexPath = self.tableView.indexPathForSelectedRow() {
-                let object = objects[indexPath.row] as NSDate
-            (segue.destinationViewController as DetailViewController).detailItem = object
+                let object = notesArray[indexPath.row]
+                currentNoteIndex = indexPath.row
+            } else {
+                currentNoteIndex = 0
             }
         }
     }
@@ -66,14 +62,14 @@ class MasterViewController: UITableViewController {
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return objects.count
+        return notesArray.count
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as UITableViewCell
 
-        let object = objects[indexPath.row] as NSDate
-        cell.textLabel!.text = object.description
+        let object = notesArray[indexPath.row]
+        cell.textLabel!.text = object.note
         return cell
     }
 
@@ -84,7 +80,7 @@ class MasterViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         if editingStyle == .Delete {
-            objects.removeAtIndex(indexPath.row)
+            notesArray.removeAtIndex(indexPath.row)
             tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
         } else if editingStyle == .Insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
