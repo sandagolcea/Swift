@@ -47,4 +47,13 @@ class PhotosTableViewController: UITableViewController {
         
         return cell
     }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let secondScene = segue.destinationViewController as DisplayViewController
+        
+        if let indexPath = self.tableView.indexPathForSelectedRow() {
+            let selectedPhoto = photos[indexPath.row]
+            secondScene.currentPhoto = selectedPhoto
+        }
+    }
 }

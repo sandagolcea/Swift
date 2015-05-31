@@ -16,5 +16,7 @@ class DisplayViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let image = UIImage(named: currentPhoto!.filename)
+        currentImage.image = image
     }
 }
