@@ -49,8 +49,23 @@
                                     <action selector="changeOtherText:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="JSa-bQ-ASH"/>
                                 </connections>
                             </button>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q2W-i9-dG2">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <items>
+                                    <barButtonItem title="Time" id="zjp-eF-eiQ">
+                                        <connections>
+                                            <segue destination="RyI-SC-zUB" kind="presentation" modalTransitionStyle="partialCurl" id="8HP-PQ-kff"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" name="selectedControlColor" catalog="System" colorSpace="catalog"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Q2W-i9-dG2" secondAttribute="trailing" id="3nI-zb-dyL"/>
+                            <constraint firstItem="Q2W-i9-dG2" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="Vge-4R-D0w"/>
+                            <constraint firstItem="Q2W-i9-dG2" firstAttribute="bottom" secondItem="2fi-mo-0CV" secondAttribute="top" id="jIG-L3-Gbb"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="simpleLabel" destination="cKT-8e-SoA" id="9yx-RN-q8G"/>
@@ -59,6 +74,62 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--Time View Controller-->
+        <scene sceneID="2Ya-S3-GZt">
+            <objects>
+                <viewController id="RyI-SC-zUB" customClass="TimeViewController" customModule="SimpleApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kjh-ZG-kwm"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ep7-L1-4ut"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Nyz-1G-SOK">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Time:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AAu-GZ-aRz">
+                                <rect key="frame" x="29" y="45" width="69" height="46"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W1M-zN-Foc">
+                                <rect key="frame" x="106" y="53" width="211" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zj3-oC-ka8">
+                                <rect key="frame" x="29" y="99" width="53" height="30"/>
+                                <state key="normal" title="Refresh">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="refreshTime:" destination="RyI-SC-zUB" eventType="touchUpInside" id="C12-gR-8fZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Hw-YI-XqH">
+                                <rect key="frame" x="29" y="275" width="30" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="OK">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="dismissTimeView:" destination="RyI-SC-zUB" eventType="touchUpInside" id="OzW-Rx-cwz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" name="selectedControlColor" catalog="System" colorSpace="catalog"/>
+                    </view>
+                    <connections>
+                        <outlet property="timeTextField" destination="W1M-zN-Foc" id="qoA-BW-sr1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eUa-ub-iNL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="841"/>
         </scene>
     </scenes>
 </document>

@@ -13,6 +13,7 @@
 		F28CFAA71B1C831B00F31EDC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F28CFAA61B1C831B00F31EDC /* Images.xcassets */; };
 		F28CFAAA1B1C831B00F31EDC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F28CFAA81B1C831B00F31EDC /* LaunchScreen.xib */; };
 		F28CFAB61B1C831B00F31EDC /* SimpleAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28CFAB51B1C831B00F31EDC /* SimpleAppTests.swift */; };
+		F28CFAC01B1CB90300F31EDC /* TimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28CFABF1B1CB90300F31EDC /* TimeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		F28CFAAF1B1C831B00F31EDC /* SimpleAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F28CFAB41B1C831B00F31EDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F28CFAB51B1C831B00F31EDC /* SimpleAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleAppTests.swift; sourceTree = "<group>"; };
+		F28CFABF1B1CB90300F31EDC /* TimeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				F28CFA9F1B1C831B00F31EDC /* AppDelegate.swift */,
 				F28CFAA11B1C831B00F31EDC /* ViewController.swift */,
 				F28CFAA31B1C831B00F31EDC /* Main.storyboard */,
+				F28CFABF1B1CB90300F31EDC /* TimeViewController.swift */,
 				F28CFAA61B1C831B00F31EDC /* Images.xcassets */,
 				F28CFAA81B1C831B00F31EDC /* LaunchScreen.xib */,
 				F28CFA9D1B1C831B00F31EDC /* Supporting Files */,
@@ -213,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F28CFAA21B1C831B00F31EDC /* ViewController.swift in Sources */,
+				F28CFAC01B1CB90300F31EDC /* TimeViewController.swift in Sources */,
 				F28CFAA01B1C831B00F31EDC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -405,6 +409,7 @@
 				F28CFABB1B1C831B00F31EDC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F28CFABC1B1C831B00F31EDC /* Build configuration list for PBXNativeTarget "SimpleAppTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +418,7 @@
 				F28CFABE1B1C831B00F31EDC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
