@@ -18,6 +18,7 @@ class DisplayViewController: UIViewController {
         super.viewDidLoad()
         let image = UIImage(named: currentPhoto!.filename)
         currentImage.image = image
+        self.title = currentPhoto!.name
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {

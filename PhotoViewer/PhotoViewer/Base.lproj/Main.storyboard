@@ -54,7 +54,7 @@
                                 <items>
                                     <barButtonItem title="Notes" id="kyd-Dw-tCW">
                                         <connections>
-                                            <segue destination="3ea-wD-Kse" kind="presentation" id="7sB-Od-ske"/>
+                                            <segue destination="3ea-wD-Kse" kind="presentation" modalTransitionStyle="flipHorizontal" id="7sB-Od-ske"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>
