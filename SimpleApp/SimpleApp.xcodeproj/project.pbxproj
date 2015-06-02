@@ -14,6 +14,8 @@
 		F28CFAAA1B1C831B00F31EDC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F28CFAA81B1C831B00F31EDC /* LaunchScreen.xib */; };
 		F28CFAB61B1C831B00F31EDC /* SimpleAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28CFAB51B1C831B00F31EDC /* SimpleAppTests.swift */; };
 		F28CFAC01B1CB90300F31EDC /* TimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28CFABF1B1CB90300F31EDC /* TimeViewController.swift */; };
+		F28CFAC21B1D144300F31EDC /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28CFAC11B1D144300F31EDC /* DatePickerViewController.swift */; };
+		F28CFAC41B1DC51E00F31EDC /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28CFAC31B1DC51E00F31EDC /* TextViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		F28CFAB41B1C831B00F31EDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F28CFAB51B1C831B00F31EDC /* SimpleAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleAppTests.swift; sourceTree = "<group>"; };
 		F28CFABF1B1CB90300F31EDC /* TimeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeViewController.swift; sourceTree = "<group>"; };
+		F28CFAC11B1D144300F31EDC /* DatePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
+		F28CFAC31B1DC51E00F31EDC /* TextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TextViewController.swift; path = ../TextViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,8 +84,10 @@
 			isa = PBXGroup;
 			children = (
 				F28CFA9F1B1C831B00F31EDC /* AppDelegate.swift */,
+				F28CFAC31B1DC51E00F31EDC /* TextViewController.swift */,
 				F28CFAA11B1C831B00F31EDC /* ViewController.swift */,
 				F28CFAA31B1C831B00F31EDC /* Main.storyboard */,
+				F28CFAC11B1D144300F31EDC /* DatePickerViewController.swift */,
 				F28CFABF1B1CB90300F31EDC /* TimeViewController.swift */,
 				F28CFAA61B1C831B00F31EDC /* Images.xcassets */,
 				F28CFAA81B1C831B00F31EDC /* LaunchScreen.xib */,
@@ -215,6 +221,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F28CFAC41B1DC51E00F31EDC /* TextViewController.swift in Sources */,
+				F28CFAC21B1D144300F31EDC /* DatePickerViewController.swift in Sources */,
 				F28CFAA21B1C831B00F31EDC /* ViewController.swift in Sources */,
 				F28CFAC01B1CB90300F31EDC /* TimeViewController.swift in Sources */,
 				F28CFAA01B1C831B00F31EDC /* AppDelegate.swift in Sources */,

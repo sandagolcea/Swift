@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="13F1066" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -57,6 +58,30 @@
                                             <segue destination="RyI-SC-zUB" kind="presentation" modalTransitionStyle="partialCurl" id="8HP-PQ-kff"/>
                                         </connections>
                                     </barButtonItem>
+                                    <barButtonItem style="plain" id="RgI-rx-hbM">
+                                        <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="TiO-dU-oUS">
+                                            <rect key="frame" x="64" y="7" width="143" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="Descriptions">
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <connections>
+                                                <segue destination="Sbv-9l-v7w" kind="presentation" id="4Ot-R3-jjA"/>
+                                            </connections>
+                                        </button>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" id="Ug7-qu-ejn">
+                                        <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="l9w-1c-qhW">
+                                            <rect key="frame" x="217" y="7" width="111" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="Date Picker">
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <connections>
+                                                <segue destination="my7-SJ-hLd" kind="presentation" id="rbN-Gc-0zj"/>
+                                            </connections>
+                                        </button>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                         </subviews>
@@ -74,6 +99,141 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-368" y="-579"/>
+        </scene>
+        <!--Date Picker View Controller-->
+        <scene sceneID="m9E-Vd-f8x">
+            <objects>
+                <viewController id="my7-SJ-hLd" customClass="DatePickerViewController" customModule="SimpleApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="K6S-l4-MIE"/>
+                        <viewControllerLayoutGuide type="bottom" id="rxL-Ac-W7r"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zK8-dE-k6X">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Ja9-eK-Dmg">
+                                <rect key="frame" x="0.0" y="34" width="600" height="162"/>
+                                <date key="date" timeIntervalSinceReferenceDate="454890698.18024302">
+                                    <!--2015-06-01 22:31:38 +0000-->
+                                </date>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BWd-My-Cfs">
+                                <rect key="frame" x="240" y="204" width="120" height="30"/>
+                                <state key="normal" title="What day is that?">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="displayDay:" destination="my7-SJ-hLd" eventType="touchUpInside" id="KeV-Bz-27H"/>
+                                </connections>
+                            </button>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pVi-94-RSN">
+                                <rect key="frame" x="-16" y="306" width="600" height="162"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="my7-SJ-hLd" id="6r3-h1-80D"/>
+                                    <outlet property="delegate" destination="my7-SJ-hLd" id="SF9-ox-xGd"/>
+                                </connections>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="umn-m6-tBX">
+                                <rect key="frame" x="16" y="240" width="30" height="30"/>
+                                <state key="normal" title="OK">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="dismissDatePickerView:" destination="my7-SJ-hLd" eventType="touchUpInside" id="my1-g3-Lvp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" name="selectedControlColor" catalog="System" colorSpace="catalog"/>
+                        <constraints>
+                            <constraint firstItem="BWd-My-Cfs" firstAttribute="top" secondItem="Ja9-eK-Dmg" secondAttribute="bottom" constant="8" symbolic="YES" id="5hq-l4-sJh"/>
+                            <constraint firstItem="Ja9-eK-Dmg" firstAttribute="top" secondItem="K6S-l4-MIE" secondAttribute="bottom" constant="14" id="AZQ-cI-wsU"/>
+                            <constraint firstAttribute="trailing" secondItem="Ja9-eK-Dmg" secondAttribute="trailing" id="M7O-72-Odl"/>
+                            <constraint firstItem="pVi-94-RSN" firstAttribute="top" secondItem="BWd-My-Cfs" secondAttribute="bottom" constant="72" id="dOJ-fO-aDk"/>
+                            <constraint firstItem="Ja9-eK-Dmg" firstAttribute="leading" secondItem="zK8-dE-k6X" secondAttribute="leading" id="ePA-iy-jxV"/>
+                            <constraint firstItem="BWd-My-Cfs" firstAttribute="centerX" secondItem="Ja9-eK-Dmg" secondAttribute="centerX" id="mNA-rd-Hps"/>
+                            <constraint firstItem="pVi-94-RSN" firstAttribute="leading" secondItem="zK8-dE-k6X" secondAttribute="leadingMargin" constant="-32" id="ocH-Xt-FGv"/>
+                            <constraint firstItem="pVi-94-RSN" firstAttribute="trailing" secondItem="zK8-dE-k6X" secondAttribute="trailingMargin" id="s9Z-kc-caA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="datePicker" destination="Ja9-eK-Dmg" id="PZk-9z-msC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ke6-ED-gYl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="271" y="467"/>
+        </scene>
+        <!--Text View Controller-->
+        <scene sceneID="UNi-so-NoJ">
+            <objects>
+                <viewController id="Sbv-9l-v7w" customClass="TextViewController" customModule="SimpleApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dLZ-wZ-kaU"/>
+                        <viewControllerLayoutGuide type="bottom" id="xhv-IJ-251"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QFq-K5-6Or">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M06-vH-yGf">
+                                <rect key="frame" x="16" y="28" width="56" height="30"/>
+                                <state key="normal" title="Top Left">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PZo-WI-NYj">
+                                <rect key="frame" x="518" y="28" width="66" height="30"/>
+                                <state key="normal" title="Top Right">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NAE-vz-Ame">
+                                <rect key="frame" x="16" y="550" width="77" height="30"/>
+                                <state key="normal" title="Botton Left">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8NS-Ti-GAj">
+                                <rect key="frame" x="493" y="550" width="91" height="30"/>
+                                <state key="normal" title="Bottom Right">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ytm-fz-JY8">
+                                <rect key="frame" x="16" y="92" width="283" height="126"/>
+                                <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NFQ-Ul-hv5">
+                                <rect key="frame" x="21" y="226" width="30" height="30"/>
+                                <state key="normal" title="OK">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="dismissTextViewController:" destination="Sbv-9l-v7w" eventType="touchUpInside" id="DGe-RB-m3r"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" name="selectedControlColor" catalog="System" colorSpace="catalog"/>
+                        <constraints>
+                            <constraint firstItem="xhv-IJ-251" firstAttribute="top" secondItem="8NS-Ti-GAj" secondAttribute="bottom" constant="20" id="4Mb-b1-mmj"/>
+                            <constraint firstItem="8NS-Ti-GAj" firstAttribute="trailing" secondItem="QFq-K5-6Or" secondAttribute="trailingMargin" id="5Cw-ug-wPr"/>
+                            <constraint firstItem="M06-vH-yGf" firstAttribute="leading" secondItem="QFq-K5-6Or" secondAttribute="leadingMargin" id="JUR-zG-fRZ"/>
+                            <constraint firstItem="M06-vH-yGf" firstAttribute="top" secondItem="dLZ-wZ-kaU" secondAttribute="bottom" constant="8" id="ODM-XP-MvI"/>
+                            <constraint firstItem="PZo-WI-NYj" firstAttribute="top" secondItem="dLZ-wZ-kaU" secondAttribute="bottom" constant="8" id="Q3H-0m-J0m"/>
+                            <constraint firstItem="xhv-IJ-251" firstAttribute="top" secondItem="NAE-vz-Ame" secondAttribute="bottom" constant="20" id="War-MV-L1I"/>
+                            <constraint firstItem="PZo-WI-NYj" firstAttribute="trailing" secondItem="QFq-K5-6Or" secondAttribute="trailingMargin" id="hmr-wN-sY8"/>
+                            <constraint firstItem="NAE-vz-Ame" firstAttribute="leading" secondItem="QFq-K5-6Or" secondAttribute="leadingMargin" id="pxd-x0-gEX"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fI9-qs-mw7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-368" y="467"/>
         </scene>
         <!--Time View Controller-->
         <scene sceneID="2Ya-S3-GZt">
@@ -110,7 +270,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Hw-YI-XqH">
-                                <rect key="frame" x="29" y="275" width="30" height="30"/>
+                                <rect key="frame" x="29" y="222" width="30" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="OK">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -129,7 +289,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eUa-ub-iNL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="140" y="841"/>
+            <point key="canvasLocation" x="-1012" y="467"/>
         </scene>
     </scenes>
 </document>
