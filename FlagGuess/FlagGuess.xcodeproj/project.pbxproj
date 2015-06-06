@@ -13,6 +13,7 @@
 		F215F9811B21ECEA00562AFA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F215F9801B21ECEA00562AFA /* Images.xcassets */; };
 		F215F9841B21ECEA00562AFA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F215F9821B21ECEA00562AFA /* LaunchScreen.xib */; };
 		F215F9901B21ECEA00562AFA /* FlagGuessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F215F98F1B21ECEA00562AFA /* FlagGuessTests.swift */; };
+		F2F4F5921B23812B00E32246 /* Array+Shuffling.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F4F5911B23812B00E32246 /* Array+Shuffling.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		F215F9891B21ECEA00562AFA /* FlagGuessTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlagGuessTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F215F98E1B21ECEA00562AFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F215F98F1B21ECEA00562AFA /* FlagGuessTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagGuessTests.swift; sourceTree = "<group>"; };
+		F2F4F5911B23812B00E32246 /* Array+Shuffling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Shuffling.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			children = (
 				F215F9791B21ECEA00562AFA /* AppDelegate.swift */,
 				F215F97B1B21ECEA00562AFA /* ViewController.swift */,
+				F2F4F5911B23812B00E32246 /* Array+Shuffling.swift */,
 				F215F97D1B21ECEA00562AFA /* Main.storyboard */,
 				F215F9801B21ECEA00562AFA /* Images.xcassets */,
 				F215F9821B21ECEA00562AFA /* LaunchScreen.xib */,
@@ -214,6 +217,7 @@
 			files = (
 				F215F97C1B21ECEA00562AFA /* ViewController.swift in Sources */,
 				F215F97A1B21ECEA00562AFA /* AppDelegate.swift in Sources */,
+				F2F4F5921B23812B00E32246 /* Array+Shuffling.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,6 +409,7 @@
 				F215F9951B21ECEA00562AFA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F215F9961B21ECEA00562AFA /* Build configuration list for PBXNativeTarget "FlagGuessTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +418,7 @@
 				F215F9981B21ECEA00562AFA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
