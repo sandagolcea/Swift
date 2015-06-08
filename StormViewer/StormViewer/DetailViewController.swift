@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Social
 
 class DetailViewController: UIViewController {
 
@@ -33,7 +34,9 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         self.configureView()
-        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .Action, target: self, action: "shareTapped")
+        let basicShareButton = UIBarButtonItem(barButtonSystemItem: .Action, target: self, action: "shareTapped")
+        let twitterShareButton = UIBarButtonItem(barButtonSystemItem: .Camera, target: self, action: "twitterShareTapped")
+        navigationItem.rightBarButtonItems = [basicShareButton, twitterShareButton]
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -49,6 +52,14 @@ class DetailViewController: UIViewController {
     func shareTapped() {
         let control = UIActivityViewController(activityItems: [detailImageView.image!], applicationActivities: [])
         presentViewController(control, animated: true, completion: nil)
+    }
+    
+    func twitterShareTapped() {
+        let socialControl = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
+        socialControl.setInitialText("Great picture!")
+        socialControl.addImage(detailImageView.image!)
+        socialControl.addURL(NSURL(string: "http://www.photolib.noaa.gov/nssl"))
+        presentViewController(socialControl, animated: true, completion: nil)
     }
 
     override func didReceiveMemoryWarning() {
